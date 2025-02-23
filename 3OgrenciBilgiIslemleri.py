@@ -79,9 +79,7 @@ def menu():
             print("Çıkış yapılıyor..")
             break
         else:
-            print("Geçersiz bir işlem.")                    
-
-
+            print("Geçersiz bir işlem.") 
 menu()
 
 
