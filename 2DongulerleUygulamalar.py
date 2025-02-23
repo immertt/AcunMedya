@@ -33,5 +33,8 @@ text = input("Bir kelime yazınız: ")
 print("Girilen kelimenin tersi: ",text[::-1])
 
 
+kullanici_list = []
+
+
 
 
