@@ -37,7 +37,7 @@ def kullanici_ekle():
     except FileNotFoundError:
         #Dosya yoksa yeni olustur ve kullanıcıyı ekle.
         with open("kullanicilar.json","w",encoding="utf-8") as dosya:
-            json.dump(kullanici,dosya,indent=4,ensure_ascii=False)
+            json.dump([kullanici],dosya,indent=4,ensure_ascii=False)
             print("Dosya oluşturuldu ve kullanıcı eklendi.")
 
 def kullanici_listele():

@@ -101,7 +101,6 @@ class Kedi(Hayvan): #Kedi sınıfı(cocuk) Hayvan sınıfından(ata) miras alıy
     def ses_cikar(self):
         print("Miyavv")
 
-
 class Kopek(Hayvan): #Koek sınıfı(cocuk) Hayvan sınıfından(ata) miras alıyor
     def ses_cikar(self):
         print("Hav havv")
