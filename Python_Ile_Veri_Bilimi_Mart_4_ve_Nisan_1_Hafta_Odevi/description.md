@@ -241,4 +241,40 @@ z = (x−μ) / σ
 Faydaları:
 -Mesafe hesaplaması daha adil olur
 -Daha iyi sınıflandırma sonuçları verir
--Accuracy ve F1-score yükselebilir
+-Accuracy ve F1-score yükselebilir.
+
+
+-------------------------*Logistic Regression Modeli: DiabetesLogisticClassifier Sınıfı-------------------------
+-------------------------*Logistic Regression Sonucları: ----------------------------------
+
+Logistic Regression modeli eğitildi.
+Logistic Regression Değerlendirmesi
+
+Doğruluk (Accuracy): 0.5843
+
+Sınıflandırma Raporu:
+               precision    recall  f1-score   support
+
+           0       0.68      0.74      0.70        34
+           1       0.42      0.36      0.38        28
+           2       0.61      0.63      0.62        27
+
+    accuracy                           0.58        89
+   macro avg       0.57      0.57      0.57        89
+weighted avg       0.57      0.58      0.58        89
+
+
+
+
+-------------------------* Genel Sonuclar: Algoritmaların Karşılaştırılması--------------------------
+
+Metrik	                    KNN (k=5)	       Logistic Regression
+
+Accuracy       	             0.5506	                 0.5843
+Macro F1-score	             0.54	                  0.57
+Weighted F1-score	         0.55	                  0.58
+En güçlü sınıf	             Sınıf 0 (Düşük)	    Sınıf 0 & 2
+En zayıf sınıf	             Sınıf 2	             Sınıf 1
+
+
+
