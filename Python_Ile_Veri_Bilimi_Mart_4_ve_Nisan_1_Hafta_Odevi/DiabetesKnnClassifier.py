@@ -32,7 +32,7 @@ class DiabetesKnnClassifier:
         X = pd.DataFrame(data.data, columns=data.feature_names) # Bağımsız değişkenler
         y = data.target # Bağımlı değişken (target)
 
-        #⚠️ Problem: y yani target, sürekli bir sayı → KNN sınıflandırma bunu kullanamaz.
+        #Problem: y yani target, sürekli bir sayı → KNN sınıflandırma bunu kullanamaz.
 
         # target'ı sınıflandırma için kategorilere ayır (Düşük, Orta, Yüksek)
         discretizer = KBinsDiscretizer(n_bins=self.n_bins, encode='ordinal', strategy='quantile')
@@ -81,7 +81,7 @@ class DiabetesKnnClassifier:
         #Satırlar: Gerçek sınıflar
         #Sütunlar: Tahmin edilen sınıflar
 
-        plt.title("Karışıklık Matrisi")
+        plt.title("KNN Algoritması - Karışıklık Matrisi")
         plt.xlabel("Tahmin Edilen")
         plt.ylabel("Gerçek")
         plt.tight_layout()
